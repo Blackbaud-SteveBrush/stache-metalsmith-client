@@ -1,0 +1,19 @@
+{
+  "name": "stache-metalsmith-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/npm/npm.git"
+  },
+  "dependencies": {
+    "blackbaud-stache": "Blackbaud-SteveBrush/stache-metalsmith",
+    "grunt": "^1.0.1"
+  }
+}
