@@ -13,7 +13,7 @@
       "url": "https://github.com/npm/npm.git"
   },
   "dependencies": {
-    "blackbaud-stache": "Blackbaud-SteveBrush/stache-metalsmith",
+    "blackbaud-stache": "file:../stache-metalsmith",
     "grunt": "^1.0.1"
   }
 }
