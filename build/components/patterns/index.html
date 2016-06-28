@@ -1,88 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Patterns - My Site</title>
-  <link rel="stylesheet" href="https://sky.blackbaudcdn.net/skyux/1.6.2/css/sky-bundle.css">
-  <link rel="stylesheet" href="/css/app.css"> </head>
-
-<body>
-  <header id="stache-header" class="bb-navbar">
-    <bb-navbar>
-      <nav class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li> <a href="/">Home</a> </li>
-          <li> <a href="/getting-started/">Getting Started</a> </li>
-          <li class="bb-navbar-active dropdown"> <a href="/components/">Components&nbsp;<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li> <a href="/components/patterns/">Patterns</a> </li>
-              <li> <a href="/components/directives/">Directives</a> </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </bb-navbar>
-  </header>
-  <div class="container">
-    <nav id="stache-breadcrumbs">
-      <div class="container">
-        <ul class="breadcrumb">
-          <li> <a href="/">Home</a> </li>
-          <li> <a href="/components/">Components</a> </li>
-          <li class="active"> <a href="/components/patterns/">Patterns</a>
-            <ul> </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <main class="col-sm-9 col-sm-push-3" id="stache-primary-content">
-      <h1 id="patterns">Patterns</h1>
-      <h2 id="panels-pattern">Panels Pattern</h2>
-      <p>
-        <div class="panel panel-default">
-          <header class="panel-heading">
-            <h4 class="panel-title">Panel Title</h4> </header>
-          <div class="panel-body"> Panel content here. </div>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patterns - My Site</title>
+    <link rel="stylesheet" href="https://sky.blackbaudcdn.net/skyux/1.6.2/css/sky-bundle.css">
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body>
+    <header id="stache-header" class="bb-navbar">
+      <bb-navbar>
+        <nav class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/getting-started/">Getting Started</a>
+            </li>
+            <li class="bb-navbar-active dropdown">
+              <a href="/components/">Components&nbsp;<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/components/patterns/">Patterns</a>
+                  </li>
+                  <li>
+                    <a href="/components/directives/">Directives</a>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+      </bb-navbar>
+    </header>
+    <div class="container">
+      <nav id="stache-breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/components/">Components</a>
+            </li>
+            <li class="active">
+              <a href="/components/patterns/">Patterns</a>
+                  <ul>
+                  </ul>
+            </li>
+          </ul>
         </div>
-      </p>
-    </main>
-    <aside class="col-sm-3 col-sm-pull-9" id="stache-secondary-content">
-      <nav class="sidebar">
-        <ul class="nav nav-stacked">
-          <li class="current"> <a href="/components/patterns/">Patterns</a>
-            <ul class="nav">
-              <li> <a href="#panels-pattern">Panels Pattern</a> </li>
-            </ul>
+      </nav>
+      <main class="col-sm-9 col-sm-push-3" id="stache-primary-content">
+        <h1 id="patterns">Patterns</h1>
+<h2 id="panels-pattern">Panels Pattern</h2>
+<h3 id="fm-data-">FM data:</h3>
+<p><pre>{
+  "items": [
+    {
+      "title": "Hello, World",
+      "description": "This is the description, no?"
+    }
+  ]
+}</pre></p>
+<h3 id="navigation-data-">Navigation data:</h3>
+<p><pre>{
+  "classname": "nav nav-stacked",
+  "items": [
+    {
+      "children": [],
+      "headings": {
+        "classname": "nav",
+        "items": [
+          {
+            "href": "#panels-pattern",
+            "title": "Panels Pattern"
+          }
+        ]
+      },
+      "level": 2,
+      "title": "Patterns",
+      "isCurrent": true,
+      "isActive": true,
+      "href": "/components/patterns/",
+      "classname": "current"
+    },
+    {
+      "level": 2,
+      "title": "Directives",
+      "href": "/components/directives/"
+    }
+  ]
+}</pre></p>
+<p><div class="stache-panels">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <header class="panel-heading">
+          <h4 class="panel-title">Hello, World</h4>
+        </header>
+        <div class="panel-body">
+          This is the description, no?
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</p>
+
+        <div class="stache-panels">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <header class="panel-heading">
+                  <h4 class="panel-title">Patterns</h4>
+                </header>
+                <div class="panel-body">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <header class="panel-heading">
+                  <h4 class="panel-title">Directives</h4>
+                </header>
+                <div class="panel-body">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="col-sm-3 col-sm-pull-9" id="stache-secondary-content">
+        <nav class="sidebar">
+          <ul class="nav nav-stacked">
+            <li class="current">
+              <a href="/components/patterns/">Patterns</a>
+                  <ul class="nav">
+                    <li>
+                      <a href="#panels-pattern">Panels Pattern</a>
+                    </li>
+                  </ul>
+            </li>
+            <li>
+              <a href="/components/directives/">Directives</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <footer id="stache-footer">
+      <nav class="container">
+        <h3>
+          <a href="#">My Site</a>
+        </h3>
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/">Home</a>
           </li>
-          <li> <a href="/components/directives/">Directives</a> </li>
+          <li>
+            <a href="/getting-started/">Getting Started</a>
+          </li>
+          <li class="active">
+            <a href="/components/">Components</a>
+          </li>
         </ul>
       </nav>
-    </aside>
-  </div>
-  <footer id="stache-footer">
-    <nav class="container">
-      <h3> <a href="#">My Site</a> </h3>
-      <ul class="nav navbar-nav">
-        <li> <a href="/">Home</a> </li>
-        <li> <a href="/getting-started/">Getting Started</a> </li>
-        <li class="active"> <a href="/components/">Components</a> </li>
-      </ul>
-    </nav>
-  </footer>
-  <script src="https://sky.blackbaudcdn.net/skyux/1.6.2/js/sky-bundle.min.js"></script>
-  <script src="/js/stache.min.js"></script>
-  <script>
+    </footer>
+    <script src="https://sky.blackbaudcdn.net/skyux/1.6.2/js/sky-bundle.min.js"></script>
+    <script src="/js/stache.min.js"></script>
+    <script>
     (function (angular, document) {
       'use strict';
       angular.element(document).ready(function () {
-        angular.bootstrap(document, ["stache"]);
+          angular.bootstrap(document, ["stache"]);
       });
     }(window.angular, document));
-
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
