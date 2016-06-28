@@ -9,11 +9,12 @@
   "author": "",
   "license": "ISC",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/npm/npm.git"
+    "type": "git",
+    "url": "https://github.com/npm/npm.git"
   },
   "dependencies": {
     "blackbaud-stache": "file:../stache-metalsmith",
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "marked": "^0.3.5"
   }
 }

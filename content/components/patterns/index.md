@@ -5,6 +5,6 @@ layout: layout-sidebar
 
 # Patterns
 
-## Heading 1
+## Panels Pattern
 
-## Heading 2
+{{> panels }}
