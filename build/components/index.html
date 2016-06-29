@@ -47,24 +47,55 @@
           </ul>
         </div>
       </nav>
-      <main class="col-sm-9 col-sm-push-3" id="stache-primary-content">
+      <main id="stache-primary-content">
         <h1 id="components">Components</h1>
 <h2 id="heading-1">Heading 1</h2>
 <h2 id="heading-2">Heading 2</h2>
 
+        <pre>{
+  "classname": "stache-panels",
+  "items": [
+    {
+      "title": "Patterns",
+      "uri": "/components/patterns/",
+      "content": "Read more about Stache's many navigation patterns"
+    },
+    {
+      "title": "Directives",
+      "uri": "/components/directives/",
+      "content": "Learn about how Stache utilizes SKY UX directives"
+    }
+  ]
+}</pre>
+        <div class="stache-panels">
+          <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="/components/patterns/">
+              <div class="panel panel-default ">
+                <header class="panel-heading">
+                  <h4 class="panel-title">Patterns</h4>
+                </header>
+                <div class="panel-body">
+                  Read more about Stache's many navigation patterns
+                </div>
+              </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="/components/directives/">
+              <div class="panel panel-default ">
+                <header class="panel-heading">
+                  <h4 class="panel-title">Directives</h4>
+                </header>
+                <div class="panel-body">
+                  Learn about how Stache utilizes SKY UX directives
+                </div>
+              </div>
+                </a>
+            </div>
+          </div>
+        </div>
       </main>
-      <aside class="col-sm-3 col-sm-pull-9" id="stache-secondary-content">
-        <nav class="sidebar">
-          <ul class="nav nav-stacked">
-            <li>
-              <a href="/components/patterns/">Patterns</a>
-            </li>
-            <li>
-              <a href="/components/directives/">Directives</a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
     </div>
     <footer id="stache-footer">
       <nav class="container">

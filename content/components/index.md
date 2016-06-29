@@ -1,5 +1,6 @@
 ---
 title: Components
+layout: panels
 ---
 
 # Components

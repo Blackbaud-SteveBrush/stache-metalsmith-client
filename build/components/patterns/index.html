@@ -52,7 +52,7 @@
           </ul>
         </div>
       </nav>
-      <main class="col-sm-9 col-sm-push-3" id="stache-primary-content">
+      <main id="stache-primary-content">
         <h1 id="patterns">Patterns</h1>
 <h2 id="panels-pattern">Panels Pattern</h2>
 <h3 id="fm-data-">FM data:</h3>
@@ -60,7 +60,9 @@
   "items": [
     {
       "title": "Hello, World",
-      "description": "This is the description, no?"
+      "content": "<h2>This is the description, no?</h2>",
+      "uri": "http://google.com",
+      "classname": "heyo"
     }
   ]
 }</pre></p>
@@ -74,83 +76,51 @@
         "classname": "nav",
         "items": [
           {
-            "href": "#panels-pattern",
+            "uri": "#panels-pattern",
             "title": "Panels Pattern"
           }
         ]
       },
       "level": 2,
       "title": "Patterns",
+      "description": "Read more about Stache's many navigation patterns",
       "isCurrent": true,
       "isActive": true,
-      "href": "/components/patterns/",
+      "uri": "/components/patterns/",
       "classname": "current"
     },
     {
       "level": 2,
       "title": "Directives",
-      "href": "/components/directives/"
+      "description": "Learn about how Stache utilizes SKY UX directives",
+      "uri": "/components/directives/"
     }
   ]
 }</pre></p>
-<p><div class="stache-panels">
+<p><div class="">
   <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-default">
+    <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="http://google.com">
+      <div class="panel panel-default heyo">
         <header class="panel-heading">
           <h4 class="panel-title">Hello, World</h4>
         </header>
         <div class="panel-body">
-          This is the description, no?
+          <h2>This is the description, no?</h2>
         </div>
       </div>
+        </a>
     </div>
   </div>
 </div>
 </p>
 
-        <div class="stache-panels">
+        <pre>[]</pre>
+        <div class="">
           <div class="row">
-            <div class="col-sm-4">
-              <div class="panel panel-default">
-                <header class="panel-heading">
-                  <h4 class="panel-title">Patterns</h4>
-                </header>
-                <div class="panel-body">
-                  
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="panel panel-default">
-                <header class="panel-heading">
-                  <h4 class="panel-title">Directives</h4>
-                </header>
-                <div class="panel-body">
-                  
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </main>
-      <aside class="col-sm-3 col-sm-pull-9" id="stache-secondary-content">
-        <nav class="sidebar">
-          <ul class="nav nav-stacked">
-            <li class="current">
-              <a href="/components/patterns/">Patterns</a>
-                  <ul class="nav">
-                    <li>
-                      <a href="#panels-pattern">Panels Pattern</a>
-                    </li>
-                  </ul>
-            </li>
-            <li>
-              <a href="/components/directives/">Directives</a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
     </div>
     <footer id="stache-footer">
       <nav class="container">
